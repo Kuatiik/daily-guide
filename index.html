@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>Aysel</title>
+  <meta name="description" content="Sadə və rahat üsul. Özüm də istifadə edirəm." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0f0f0f;
+      color: #f5f5f5;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 28px 18px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap {
+      width: 100%;
+      max-width: 400px;
+    }
+    .card {
+      background: linear-gradient(165deg, #1a1a1a 0%, #141414 100%);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 24px;
+      padding: 36px 28px 30px;
+      box-shadow:
+        0 0 0 1px rgba(255,255,255,0.03),
+        0 20px 50px rgba(0,0,0,0.45);
+      position: relative;
+      overflow: hidden;
+    }
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+    }
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #c4a574;
+      background: rgba(196,165,116,0.1);
+      border: 1px solid rgba(196,165,116,0.2);
+      padding: 5px 12px;
+      border-radius: 100px;
+      margin-bottom: 22px;
+    }
+    .avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: linear-gradient(145deg, #c4a574, #8b7355);
+      margin: 0 auto 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: 600;
+      color: #1a1a1a;
+      box-shadow: 0 4px 20px rgba(196,165,116,0.25);
+    }
+    h1 {
+      font-size: 23px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #fff;
+      letter-spacing: -0.02em;
+      text-align: center;
+    }
+    .sub {
+      font-size: 14px;
+      color: #999;
+      margin-bottom: 26px;
+      text-align: center;
+      font-weight: 400;
+    }
+    .divider {
+      height: 1px;
+      background: rgba(255,255,255,0.06);
+      margin: 0 0 22px;
+    }
+    .text {
+      font-size: 14.5px;
+      color: #b0b0b0;
+      text-align: left;
+      margin-bottom: 14px;
+      font-weight: 400;
+    }
+    .text strong {
+      color: #e8e8e8;
+      font-weight: 500;
+    }
+    .note {
+      font-size: 13px;
+      color: #8a8a8a;
+      margin: 22px 0 26px;
+      text-align: left;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.05);
+      padding: 14px 16px;
+      border-radius: 14px;
+      line-height: 1.5;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      background: linear-gradient(135deg, #c4a574 0%, #a8895e 100%);
+      color: #1a1a1a;
+      text-decoration: none;
+      font-size: 15.5px;
+      font-weight: 600;
+      padding: 16px 20px;
+      border-radius: 14px;
+      transition: transform 0.15s, box-shadow 0.2s, opacity 0.2s;
+      box-shadow: 0 4px 18px rgba(196,165,116,0.3);
+      letter-spacing: -0.01em;
+    }
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 24px rgba(196,165,116,0.4);
+    }
+    .btn:active {
+      transform: scale(0.98);
+    }
+    .btn svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+    .footer {
+      margin-top: 20px;
+      font-size: 11.5px;
+      color: #555;
+      text-align: center;
+      letter-spacing: 0.02em;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div style="text-align:center">
+        <span class="badge">Şəxsi tövsiyə</span>
+      </div>
+
+      <div class="avatar">A</div>
+      <h1>Salam, mən Aysel</h1>
+      <p class="sub">Sadə bir üsul tapmışam və özüm də istifadə edirəm</p>
+
+      <div class="divider"></div>
+
+      <p class="text">
+        Bu üsul mürəkkəb deyil. <strong>Kiçik məbləğlə</strong> başlamaq olar və addım-addım irəliləmək mümkündür.
+      </p>
+      <p class="text">
+        Mən özüm yoxlamışam və indi normal nəticə alan insanlara da kömək edirəm.
+      </p>
+
+      <div class="note">
+        Əgər maraqlısansa — aşağıdakı düyməyə bas. Telegram-da qısa və aydın izah edəcəyəm.
+      </div>
+
+      <a class="btn" href="https://t.me/KaveeSapu_bot" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+        Telegram-da davam et
+      </a>
+
+      <p class="footer">Sadə · Aydın · Sakit</p>
+    </div>
+  </div>
+</body>
+</html>
